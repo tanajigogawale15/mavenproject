@@ -5,8 +5,6 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- script: mvn validate
-  displayName: 'validate maven project'
+steps:  
 - script: mvn compile
   displayName: 'compile maven project'
